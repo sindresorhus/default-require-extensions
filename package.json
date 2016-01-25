@@ -1,6 +1,6 @@
 {
   "name": "default-require-extensions",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Node's default require extensions as a separate module",
   "license": "MIT",
   "repository": "jamestalmage/default-require-extensions",
@@ -35,6 +35,9 @@
     "xo": "^0.12.1"
   },
   "nyc": {
-    "exclude": ["test.js", "fixture"]
+    "exclude": [
+      "test.js",
+      "fixture"
+    ]
   }
 }
