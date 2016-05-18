@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Node's default require extensions as a separate module",
   "license": "MIT",
-  "repository": "jamestalmage/default-require-extensions",
+  "repository": "avajs/default-require-extensions",
   "author": {
     "name": "James Talmage",
     "email": "james@talmage.io",
