@@ -1,4 +1,4 @@
-# default-require-extensions [![Build Status](https://travis-ci.org/jamestalmage/default-require-extensions.svg?branch=master)](https://travis-ci.org/jamestalmage/default-require-extensions)
+# default-require-extensions [![Build Status](https://travis-ci.org/avajs/default-require-extensions.svg?branch=master)](https://travis-ci.org/avajs/default-require-extensions)
 
 > Node's default require extensions as a separate module
 
