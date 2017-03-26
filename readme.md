@@ -22,7 +22,6 @@ const json = require('default-require-extensions/json');
 
 require.extensions['.js'] = js;
 require.extensions['.js'] = json;
-
 ```
 
 *Note:* You would never actually do the above. Use these in your custom require extensions instead.

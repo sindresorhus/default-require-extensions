@@ -10,7 +10,7 @@
     "url": "github.com/jamestalmage"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && nyc ava"
@@ -27,12 +27,12 @@
     "node"
   ],
   "dependencies": {
-    "strip-bom": "^2.0.0"
+    "strip-bom": "^3.0.0"
   },
   "devDependencies": {
-    "ava": "^0.14.0",
-    "nyc": "^6.4.4",
-    "xo": "^0.15.1"
+    "ava": "^0.18.2",
+    "nyc": "^10.1.2",
+    "xo": "^0.18.1"
   },
   "nyc": {
     "exclude": [

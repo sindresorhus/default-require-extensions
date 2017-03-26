@@ -1,7 +1,8 @@
+/* eslint-disable import/no-duplicates */
 import test from 'ava';
 import js from './js';
 import json from './json';
-import def from './';
+import def from '.';
 
 require.extensions['.js'] = js;
 require.extensions['.json'] = json;
@@ -12,5 +13,5 @@ test(t => {
 	t.is(def, js);
 	t.is(require('./fixture/foo.js'), 'foo');
 	t.is(require('./fixture/foo.json'), 'foo');
-	t.throws(() => _require('./fixture/bad.json'), /[\\\/]fixture[\\\/]bad\.json/);
+	t.throws(() => _require('./fixture/bad.json'), /[\\/]fixture[\\/]bad\.json/);
 });
