@@ -1,4 +1,4 @@
-/* eslint-disable import/no-duplicates */
+/* eslint-disable import/no-duplicates, node/no-deprecated-api */
 import test from 'ava';
 import js from './js';
 import json from './json';
@@ -9,7 +9,7 @@ require.extensions['.json'] = json;
 
 const _require = require;
 
-test(t => {
+test('basic', t => {
 	t.is(def, js);
 	t.is(require('./fixture/foo.js'), 'foo');
 	t.is(require('./fixture/foo.json'), 'foo');
