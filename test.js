@@ -2,16 +2,19 @@
 import test from 'ava';
 import js from './js';
 import json from './json';
-import def from '.';
+import definition from '.';
 
 require.extensions['.js'] = js;
 require.extensions['.json'] = json;
 
 const _require = require;
 
-test('basic', t => {
-	t.is(def, js);
+test('main', t => {
+	t.is(definition, js);
 	t.is(require('./fixture/foo.js'), 'foo');
 	t.is(require('./fixture/foo.json'), 'foo');
-	t.throws(() => _require('./fixture/bad.json'), /[\\/]fixture[\\/]bad\.json/);
+
+	t.throws(() => {
+		_require('./fixture/bad.json');
+	}, /[\\/]fixture[\\/]bad\.json/);
 });

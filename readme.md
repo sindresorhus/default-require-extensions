@@ -25,8 +25,3 @@ require.extensions['.js'] = json;
 ```
 
 *Note:* You would never actually do the above. Use these in your custom require extensions instead.
-
-
-## License
-
-MIT © Node.js contributors, [James Talmage](https://github.com/jamestalmage)

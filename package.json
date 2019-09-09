@@ -4,18 +4,13 @@
 	"description": "Node's default require extensions as a separate module",
 	"license": "MIT",
 	"repository": "avajs/default-require-extensions",
-	"author": {
-		"name": "James Talmage",
-		"email": "james@talmage.io",
-		"url": "github.com/jamestalmage"
-	},
+	"main": "js.js",
 	"engines": {
 		"node": ">=8"
 	},
 	"scripts": {
 		"test": "xo && nyc ava"
 	},
-	"main": "js.js",
 	"files": [
 		"js.js",
 		"json.js"
